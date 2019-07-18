@@ -1,0 +1,21 @@
+{
+  "name": "trabajofinal",
+  "version": "1.0.0",
+  "description": "Defunciones Chile 2016",
+  "main": "index.js",
+  "repository": {
+    "url": "https://coniherrera.github.io/curso-dataviz/"
+  },
+  "scripts": {
+    "test": "echo \"Solo de prueba\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "csv-parser": "^2.3.0",
+    "csv-writer": "^1.4.0",
+    "http-serve": "^1.0.1",
+    "read-excel-file": "^4.0.1"
+  }
+}

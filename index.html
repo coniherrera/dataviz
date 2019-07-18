@@ -1,22 +1,96 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<html>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Fau NodeJS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="highlight.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS Requerido por Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
 
-    <title>Desarrollo y Programación de Visualización de Datos>
-  </head>
-  <body>
-    <h1>Desarrollo y Programación de Visualización de Datos</h1>
+    <!-- CSS para dar tamaño al mapa -->
+    <style>
+body {
+  color: #403B2F;
+  background-color: #E8E5E0;
+  font-family: 'Chivo', sans-serif;
+  font-size: .9em;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 1px;
+  display: block;
+}
+
+
+#myMap{
+    height: 600px;
+    width: 600px;
+}
+
+</style>
+</head>
+<body>
+    </style>
+    <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+    <div class="row mt-4">
+    <div class="col-5">    
+    <h1 class="display-3">Defunciones en Chile</h1>
+    <br>
+    <h4 class="lead">Año 2016 · Departamento de Estadísticas e Información de Salud · Gobierno de Chile</h4>
+    <br>
+    <p>En Chile, la Mortalidad se obtiene a partir de las Estadísticas Vitales que presenta, entre otras, las cifras de defunciones ocurridas en el país. Permiten conocer anualmente la frecuencia, localización territorial y algunas características de las defunciones. En Chile las Estadísticas Vitales se producen desde 1982 en virtud del Convenio Nacional de Estadísticas Vitales (CNEV) en conjunto con el Servicio de Registro Civil e Identificación (SRCeI) y el Instituto Nacional de Estadísticas (INE).
+    </p>
+    <br>
+    <button type="button", href="http://google.com", class="btn btn-dark btn-sm">fuente</button> 
+    </div>   
+    <div class="col">
+    <div class="intro">
+    <div id="myMap"></div>
+    </div>                 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- JS Requerido por Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+
+    <!-- Script de prueba -->
+    <script src="mapa.js"></script>
+    
+</body>
+
 </html>
