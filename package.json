@@ -16,6 +16,6 @@
     "csv-parser": "^2.3.0",
     "csv-writer": "^1.4.0",
     "http-serve": "^1.0.1",
-    "read-excel-file": "^4.0.1"
+    "read-excel-file": "^5.5.0"
   }
 }
